@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Capacitación en Energía Eólica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>EcoWind Pro</h1>
+        <h3>Sistema de Capacitación en Energía Eólica</h3>
+        <nav>
+            <ul>
+                <li><a href="#intro">Introducción</a></li>
+                <li><a href="#components">Componentes</a></li>
+                <li><a href="#advantages">Ventajas</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#progress">Progreso</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h2>Introducción</h2>
+        <p>La energía eólica es una de las fuentes de energía renovable más importantes. Utiliza la fuerza del viento para generar electricidad de manera limpia y sostenible.</p>
+        <p>En este curso, aprenderás sobre los componentes clave de una turbina eólica, sus ventajas, y pondrás a prueba tus conocimientos con quizzes interactivos.</p>
+    </section>
+
+    <section id="components">
+        <h2>Componentes de una Turbina Eólica</h2>
+        <p>Una turbina eólica consta de los siguientes componentes clave:</p>
+        <ul>
+            <li><strong>Rotor:</strong> Convierte la energía cinética del viento en energía mecánica.</li>
+            <li><strong>Generador:</strong> Transforma la energía mecánica en energía eléctrica.</li>
+            <li><strong>Torre:</strong> Soporta el rotor y el generador, elevándolos a una altura donde los vientos son más fuertes.</li>
+            <li><strong>Sistema de Control:</strong> Supervisa y ajusta el funcionamiento de la turbina para maximizar la producción de energía.</li>
+            <li><strong>Anemómetro:</strong> Mide la velocidad del viento para que el sistema de control pueda ajustar la orientación de la turbina.</li>
+        </ul>
+    </section>
+
+    <section id="advantages">
+        <h2>Ventajas de la Energía Eólica</h2>
+        <ul>
+            <li>Es una fuente de energía renovable y abundante.</li>
+            <li>Reduce las emisiones de gases de efecto invernadero.</li>
+            <li>Promueve el desarrollo económico en zonas rurales.</li>
+            <li>Reduce la dependencia de los combustibles fósiles.</li>
+        </ul>
+    </section>
+
+    <section id="quiz">
+        <h2>Quiz Interactivo</h2>
+        <div id="quiz-container">
+            <p id="question">Pregunta 1: ¿Cuál es el componente que convierte la energía del viento en energía mecánica?</p>
+            <button onclick="checkAnswer(1, 'Rotor')">Rotor</button>
+            <button onclick="checkAnswer(1, 'Generador')">Generador</button>
+            <button onclick="checkAnswer(1, 'Torre')">Torre</button>
+        </div>
+
+        <div id="quiz-container-2" style="display:none;">
+            <p id="question2">Pregunta 2: ¿Qué dispositivo mide la velocidad del viento?</p>
+            <button onclick="checkAnswer(2, 'Anemómetro')">Anemómetro</button>
+            <button onclick="checkAnswer(2, 'Torre')">Torre</button>
+            <button onclick="checkAnswer(2, 'Generador')">Generador</button>
+        </div>
+
+        <p id="result"></p>
+    </section>
+
+    <section id="progress">
+        <h2>Tu Progreso</h2>
+        <div id="progress-bar">
+            <div id="progress-fill"></div>
+        </div>
+        <p id="progress-text">0% Completado</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 RhinoGuard-Tech</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
